@@ -38,25 +38,14 @@ int main () {
     scanf("%d-%d-%d %d:%d", &Data1.Dia, &Data1.Mes, &Data1.Ano, &Data1.Horas, &Data1.Minutos);
     scanf("%d-%d-%d %d:%d", &Data2.Dia, &Data2.Mes, &Data2.Ano, &Data2.Horas, &Data2.Minutos);
 
-    MinutosData1 += (Data1.Horas * (60)) + Data1.Minutos;
-    MinutosData1 += Data1.Dia * (24) * (60);
-    MinutosData1 += minutos_ao_mes(Data1.Mes, Data2.Ano);
-    
-    if(isBissexto(Data1.Ano)) {
-        MinutosData1 += Data1.Ano * 527040; 
-    } else {
-        MinutosData1 += Data1.Ano * 525600; 
-    }
+   
+    MinutosData1 = Data1.Ano * (isBissexto(Data1.Ano) ? 527040 : 525600);
+    MinutosData1 += minutos_ao_mes(Data1.Mes, Data1.Ano);
+    MinutosData1 += Data1.Dia * 24 * 60 + Data1.Horas * 60 + Data1.Minutos;
 
-    MinutosData2 += (Data2.Horas * (60)) + Data2.Minutos;
-    MinutosData2 += Data2.Dia * (24) * (60);
+    MinutosData2 = Data2.Ano * (isBissexto(Data2.Ano) ? 527040 : 525600);
     MinutosData2 += minutos_ao_mes(Data2.Mes, Data2.Ano);
-    
-    if(isBissexto(Data2.Ano)) {
-        MinutosData2 += Data2.Ano * 527040; 
-    } else {
-        MinutosData2 += Data2.Ano * 525600; 
-    }
+    MinutosData2 += Data2.Dia * 24 * 60 + Data2.Horas * 60 + Data2.Minutos;
 
     MinutosData1 = MinutosData2 - MinutosData1;
 
