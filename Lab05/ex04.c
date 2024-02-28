@@ -65,14 +65,12 @@ int ganha(int dim, char tab[MAXDIM][MAXDIM], char jogador) {
         if (c == 'x') {
             XC++; } else { OC++;} 
     }
-
     if (XC == OC)
     if ((ganha(D, tab, 'x')) || (ganha(D, tab, 'o'))) {
         putchar('?');
         putchar('\n');
         return 0;
     }
-
     if (ganha(D, tab, 'x')) {
         putchar('x');
         putchar('\n');
