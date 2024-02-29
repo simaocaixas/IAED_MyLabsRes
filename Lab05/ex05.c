@@ -2,8 +2,6 @@
     #include <stdio.h>
     #include <string.h>
 
-    #define MAXVEC 20
-
     typedef struct {
         int horas;
         int minutos;
