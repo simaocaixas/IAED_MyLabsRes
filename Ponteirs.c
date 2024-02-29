@@ -31,14 +31,14 @@ int main() {
 }
 
 /*
-int fun(const int *p) {      // 3 - O ponteiro 'p' aponta para uma constante; neste caso, a constante 'i' com valor 10
-    *p = 0;                  // 4 - Tentativa de modificar o valor apontado por 'p' para 0; isso causará um erro de compilação, pois 'i' é uma constante
-    return 0;                // 5 - Isto nunca será alcançado!!
+int fun(const int *p) {         // 3 - O ponteiro 'p' aponta para uma constante; neste caso, a constante 'i' com valor 10
+    *p = 0;                     // 4 - Tentativa de modificar o valor apontado por 'p' para 0; isso causará um erro de compilação, pois 'i' é uma constante
+    return 0;                   // 5 - Isto nunca será alcançado!!
 }
 
 int main() {
-    const int i = 10;        // 1 - Declaração de uma constante do tipo integer 'i' com o valor 10, que não pode ser alterada ao longo do programa!
-    fun(&i);                 // 2 - Chama a função 'fun' e passa o endereço da memoria da constante 'i' como argumento (ex: 0x7fff77923cc8)
+    const int i = 10;           // 1 - Declaração de uma constante do tipo integer 'i' com o valor 10, que não pode ser alterada ao longo do programa!
+    fun(&i);                    // 2 - Chama a função 'fun' e passa o endereço da memoria da constante 'i' como argumento (ex: 0x7fff77923cc8)
     return 0;
 }
 */
