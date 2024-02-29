@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-// Ponteiros - Introdução; Começar a ler por a função main!
+// Ponteiros - Introdução; Começar a ler por a função main! Correr o codigo e verificar o valor das variaveis A e I
 
 void duplica_componteiros(int *p) {
     *p = (*p + 2);             // neste caso o ponteiro (*p) está sempre a apontar para o endereço (&i)  
