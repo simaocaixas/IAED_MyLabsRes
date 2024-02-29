@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+// Ponteiros - Introdução; start reading in main!
+
 void duplica_componteiros(int *p) {
     *p = (*p + 2);             // neste caso o ponteiro (*p) está sempre a apontar para o endereço (&i)  
 }
