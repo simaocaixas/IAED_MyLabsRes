@@ -16,10 +16,10 @@ int main() {
 
     int I = 2;
     int A = 2;
-    int *P = &I;              //0x7ffc18e44148 é o endereço de I; Para printar o endereço para o terminal: printf("Endereço de I:%p", P);"
+    int *P = &I;               //0x7ffc18e44148 é o endereço de I; Para printar o endereço para o terminal: printf("Endereço de I:%p", P);"
 
-    duplica_componteiros(P); //Alteramos diretamente o valor que se encontra no endereco 0x7ffc18e44148
-    duplica_semponteiros(A); //Fazemos uma copia de A que eventualmente se perde na função duplica_semponteiros visto que a função não dá nenhum return!
+    duplica_componteiros(P);   //Alteramos diretamente o valor que se encontra no endereco 0x7ffc18e44148
+    duplica_semponteiros(A);   //Fazemos uma copia de A que eventualmente se perde na função duplica_semponteiros visto que a função não dá nenhum return!
 
     printf("Valor do p após ser duplicado numa funcao void: %d\n", *P);
     printf("Valor do a após ser duplicado numa funcao void: %d\n", A);
