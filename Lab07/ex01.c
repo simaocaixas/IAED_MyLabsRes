@@ -1,4 +1,5 @@
 /* iaed24 - ist1109632 - lab05/ex01 */
+// BUBBLE SORT IMPLEMENTATION + DYNAMIC MEMORY FIRST TRY
 #include <stdio.h>
 #include <stdlib.h>
 
