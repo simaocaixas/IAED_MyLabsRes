@@ -5,8 +5,7 @@
 void swap(long *a, long *b) {
     long aux = *a;
     *a = *b;
-    *b = aux;
-}
+    *b = aux; }
 
 void sort(long N, long *vector) {
 
@@ -19,7 +18,7 @@ void sort(long N, long *vector) {
             }
         }
         swap(&vector[e], &vector[index_min]);
-}
+    }
 }
 
 int main() {
@@ -52,7 +51,6 @@ int main() {
     free(vector);
     return 0;
 }
-
 
 /*
 
