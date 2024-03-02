@@ -2,4 +2,5 @@
 Few exercises proposed while learning C. 
 * Lab03 -> Different output / States
 * Lab04 -> One-dimensional vectors / String manipulation
-* Lab04 -> Multidimensional vectors / Structures
+* Lab05 -> Multidimensional vectors / Structures
+* Lab07 -> Sort Algoritms Implementations
