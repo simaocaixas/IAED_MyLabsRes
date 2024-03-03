@@ -57,6 +57,6 @@ a = { 20, 11, 16, 8, 21, 12, 10, 14, 17, 6 }
 Supondo que em cada iteração o algoritmo percorre o vector da esquerda para a direita, qual o
 conteúdo do vector a após as duas primeiras iterações?
 
-a = { 11, 16, 8, 20, 12, 10, 14, 17, 6, 21}
+a = { 11, 16, 8, 20, 21, 12, 10, 14, 17, 6 }
 
 */
