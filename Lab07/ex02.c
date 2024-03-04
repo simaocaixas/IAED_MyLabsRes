@@ -64,6 +64,6 @@ Supondo que em cada iteração o algoritmo identifica o menor elemento e
 o coloca na posição mais à esquerda, qual o conteúdo do vector a
 após as três primeiras iterações? 
 
-Resposta: a = {6, 8, 10, 20, 11, 16, 21, 12, 14, 17}
+a = { 6, 8, 10, 11, 21, 12, 16, 14, 17, 20 }
 
 */
