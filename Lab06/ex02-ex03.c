@@ -1,4 +1,4 @@
-int search(int a[], int n, int elem) {    // Avaliar a complexidade da função search com notação big O; n = numero de elementos no vetor a, elem é o valor a procurar em a, a tem os numeros ordenados!
+int search(int a[], int n, int elem) {    // Avaliar a complexidade da função search com notação big O; n = nº de elementos no vetor a, elem é o valor a procurar;
   int left = 0, right = n-1;               
 
   while (left <= right) {                 // Enquanto o intervalo de busca existir:
@@ -18,7 +18,6 @@ R: O tamanho do intervalo onde estamos a procurar o elemento é constantemente r
 podemos considerar um algoritmo de busca binario de compelexidade O(LogN), onde N é o n de elementos 
 do nosso vetor.
 */ 
-
 
 ------------------------------------------------------------------------------------------------------------------------------
 
