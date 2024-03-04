@@ -53,6 +53,24 @@ R: No pior obtemos a complexidade O(LogN)*O(M);
 */ 
 
 ------------------------------------------------------------------------------------------------------------------------------
+  
+int funcao (int a[], int n, int b[], int m) {      // Complexidade de 'funcao', n e m são os tamanhos de a e b, respetivamente
+  int i = n-1, j, count = 0;                     
+  while (i > 0) {
+    for (j = 0; j < m; j++) {                      // Iteramamos o vetor b m vezes logo complexidade linear O(M);
+      if (a[i] == b[j])
+        count++;
+    }
+    i = i/2;                                       // O vetor a é iterado n/2 vezes, busca binaria logo complexidade O(LogN);
+  }
+  return count;
+}
+
+/*
+R: No pior obtemos a complexidade O(LogN)*O(M);
+*/ 
+
+------------------------------------------------------------------------------------------------------------------------------
 
 int funcao (int n, int m) {                       // Complexidade de 'funcao'
   int i = 0, count = 0;
