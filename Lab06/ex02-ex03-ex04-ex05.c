@@ -1,4 +1,5 @@
-int search(int a[], int n, int elem) {    // Avaliar a complexidade da função search com notação big O; n = nº de elementos no vetor a, elem é o valor a procurar;
+//Exercicio 1 - Avaliar a complexidade da função search com notação big O;
+int search(int a[], int n, int elem) {    //  n = nº de elementos no vetor a, elem é o valor a procurar;
   int left = 0, right = n-1;               
 
   while (left <= right) {                 // Enquanto o intervalo de busca existir:
@@ -20,8 +21,9 @@ do nosso vetor.
 */ 
 
 ------------------------------------------------------------------------------------------------------------------------------
-
-int funcao (int a[], int n) {       // Avaliar a complexidade da função 'funçaõ' com notação big O; 
+//Exercicio 2 - Avaliar a complexidade da função com notação big O, no melhor e pior caso;
+  
+int funcao (int a[], int n) {        
   int i, sum = 0;                  
 
   for (i = 0; i < n/2; i++)         // Itera n/2 vezes o vetor, ou seja se a = [1,2,3,4,5,6] itera 3 vezes
@@ -35,8 +37,9 @@ o crescimento da complexidade é constante: O(N).
 */ 
 
 ------------------------------------------------------------------------------------------------------------------------------
+//Exercicio 3 - Avaliar a complexidade da função com notação big O;
 
-int funcao (int a[], int n, int b[], int m) {        // Complexidade de 'funcao', n e m são os tamanhos de a e b, respetivamente
+int funcao (int a[], int n, int b[], int m) {        // n e m são os tamanhos de a e b, respetivamente
   int i = n-1, j, count = 0;                     
   while (i > 0) {
     for (j = 0; j < m; j++) {                        // Iteramamos o vetor b m vezes logo complexidade linear O(M);
@@ -53,8 +56,9 @@ R: No pior obtemos a complexidade O(LogN)*O(M);
 */ 
 
 ------------------------------------------------------------------------------------------------------------------------------
-  
-int funcao (int a[], int n, int b[], int m) {      // Complexidade de 'funcao', n e m são os tamanhos de a e b, respetivamente
+//Exercicio 4 - Avaliar a complexidade da função com notação big O;
+
+int funcao (int a[], int n, int b[], int m) {      // n e m são os tamanhos de a e b, respetivamente
   int i = n-1, j, count = 0;                     
   while (i > 0) {
     for (j = 0; j < m; j++) {                      // Iteramamos o vetor b m vezes logo complexidade linear O(M);
@@ -71,8 +75,9 @@ R: No pior obtemos a complexidade O(LogN)*O(M);
 */ 
 
 ------------------------------------------------------------------------------------------------------------------------------
+//Exercicio 5 - Avaliar a complexidade da função com notação big O;
 
-int funcao (int n, int m) {                       // Complexidade de 'funcao'
+int funcao (int n, int m) {                      
   int i = 0, count = 0;
   while (i < n*n) {                               // loop ocorre n² vezes, O(N²)
     if (i % m == 0)                               // (i % m == 0) tem uma complexidade constante visto que é uma mera comparação
