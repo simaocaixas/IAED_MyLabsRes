@@ -59,6 +59,6 @@ a = { 20, 11, 16, 8, 21, 12, 10, 14, 17, 6 }
 Supondo que o algoritmo vai inserindo os elementos à esquerda,
 qual o conteúdo do vector a após as três primeiras iterações?
 
-a = { 6, 20, 11, 16, 8, 21, 12, 10, 14, 17}
+a = { 8, 11, 16, 20, 21, 12, 10, 14, 17, 6 }
 
 */
