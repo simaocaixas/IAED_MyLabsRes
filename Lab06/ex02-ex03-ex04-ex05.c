@@ -1,4 +1,5 @@
 //Exercicio 1 - Avaliar a complexidade da função search com notação big O;
+
 int search(int a[], int n, int elem) {    //  n = nº de elementos no vetor a, elem é o valor a procurar;
   int left = 0, right = n-1;               
 
