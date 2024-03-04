@@ -33,3 +33,4 @@ int funcao (int a[], int n) {       // Avaliar a complexidade da função 'funç
 R: No melhor caso e no pior caso a funcao tem a mesma complexidade, ou seja itera N/2 vezes o vetor, logo 
 o crescimento da complexidade é constante: O(N).
 */ 
+
