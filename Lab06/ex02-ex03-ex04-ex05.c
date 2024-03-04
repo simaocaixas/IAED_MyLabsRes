@@ -91,3 +91,24 @@ int funcao (int n, int m) {
 R: No pior obtemos a complexidade O(N²)
 */ 
 
+------------------------------------------------------------------------------------------------------------------------------
+//Exercicio 6 - Avaliar a complexidade da função com notação big O, no pior caso e no melhor;
+  
+int funcao (int n, int m) {          
+  int i = 0, count = 0; 
+
+  if (n % m == 0)               // No melhor caso onde N == M a complexidade não depende dos valores de N e M desde que sejam iguais; O(1)
+    return 0;
+
+  while (i < n) {              
+    if (i % m == 0)
+      count++;
+    i = i + 2;                 // Iteramos (n / 2) vezes, que continua a ser uma complexidade constante O(N)
+  }
+  return count;
+}
+
+/*
+R: No pior obtemos a complexidade O(N), no melhor caso O(1)
+*/ 
+  
