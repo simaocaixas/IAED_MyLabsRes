@@ -66,7 +66,7 @@ int funcao (int a[], int n, int b[], int m) {      // n e m são os tamanhos de 
       if (a[i] == b[j])
         count++;
     }
-    i = i/2;                                       // O vetor a é iterado é utilizado busca binaria logo complexidade O(LogN);
+    i = i/2;                                       // Complexidade O(LogN);
   }
   return count;
 }
