@@ -26,6 +26,7 @@ valor de retorno: 5 (index atual pivot (10))
 
 
 vetor inical = <20, 11, 16, 9, 12, 14, 17, 19, 13, 15>
+
 vetor após partition = <13, 11, 14, 9, 12, 15, 17, 19, 20, 16>
 valor de retorno: 5 (index atual pivot (15))
 
